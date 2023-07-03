@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Student\\workspace\\vincent-gyurgyik-student-code\\SidePrjoectAPI\\SidePrjoectAPI.csproj": {}
+    "C:\\Users\\Student\\Desktop\\SidePrjoectAPI\\SidePrjoectAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Student\\workspace\\vincent-gyurgyik-student-code\\SidePrjoectAPI\\SidePrjoectAPI.csproj": {
+    "C:\\Users\\Student\\Desktop\\SidePrjoectAPI\\SidePrjoectAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Student\\workspace\\vincent-gyurgyik-student-code\\SidePrjoectAPI\\SidePrjoectAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Student\\Desktop\\SidePrjoectAPI\\SidePrjoectAPI.csproj",
         "projectName": "SidePrjoectAPI",
-        "projectPath": "C:\\Users\\Student\\workspace\\vincent-gyurgyik-student-code\\SidePrjoectAPI\\SidePrjoectAPI.csproj",
+        "projectPath": "C:\\Users\\Student\\Desktop\\SidePrjoectAPI\\SidePrjoectAPI.csproj",
         "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Student\\workspace\\vincent-gyurgyik-student-code\\SidePrjoectAPI\\obj\\",
+        "outputPath": "C:\\Users\\Student\\Desktop\\SidePrjoectAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Student\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -42,7 +42,7 @@
           "dependencies": {
             "RestSharp": {
               "target": "Package",
-              "version": "[110.2.0, )"
+              "version": "[106.15.0, )"
             }
           },
           "imports": [

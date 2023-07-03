@@ -1,18 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "RCVicTkgQvpx/7YTrqzZopRIZFupGmeKLqoltcN5rcTkBU7XNjlECIKjuClUJwPjxlvv1OQvLG1Whioe+/3p7Q==",
+  "dgSpecHash": "GfA1lNCikgexpMqiJPY60ptimC0NRbRIiCh2Ox9HcK8DEg3m0vQl8PtZAcWxGcEq06uebhQnczY+iPvCzbAlIw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Student\\workspace\\vincent-gyurgyik-student-code\\SidePrjoectAPI\\SidePrjoectAPI.csproj",
+  "projectFilePath": "C:\\Users\\Student\\Desktop\\SidePrjoectAPI\\SidePrjoectAPI.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Student\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
-    "C:\\Users\\Student\\.nuget\\packages\\restsharp\\110.2.0\\restsharp.110.2.0.nupkg.sha512",
-    "C:\\Users\\Student\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
-    "C:\\Users\\Student\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
-    "C:\\Users\\Student\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Users\\Student\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
-    "C:\\Users\\Student\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
-    "C:\\Users\\Student\\.nuget\\packages\\system.text.json\\7.0.2\\system.text.json.7.0.2.nupkg.sha512",
-    "C:\\Users\\Student\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+    "C:\\Users\\Student\\.nuget\\packages\\restsharp\\106.15.0\\restsharp.106.15.0.nupkg.sha512",
     "C:\\Users\\Student\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.32\\microsoft.netcore.app.host.win-x64.3.1.32.nupkg.sha512"
   ],
   "logs": []
