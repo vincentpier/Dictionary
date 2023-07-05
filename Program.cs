@@ -1,7 +1,7 @@
 ﻿using System;
-using RestSharp;
 using System.Collections.Generic;
-using WordApp.Models;
+using System.Linq;
+using RestSharp;
 
 namespace SideProjectAPI
 {
@@ -12,40 +12,30 @@ namespace SideProjectAPI
             Console.WriteLine("Please enter a word: ");
             string word = Console.ReadLine();
 
-            RestClient client = new RestClient("https://api.dictionaryapi.dev/api/v2/entries/en/");
-            RestRequest request = new RestRequest(word);
-            IRestResponse<List<WordEntry>> response = client.Get<List<WordEntry>>(request);
+            var client = new RestClient("https://api.dictionaryapi.dev/api/v2/entries/en/");
+            var request = new RestRequest(word);
+            IRestResponse<List<Root>> response = client.Get<List<Root>>(request);
 
-            if (response.IsSuccessful)
+            List<Root> roots = response.Data;
+            
+
+            foreach (Root root in roots)
             {
-                List<WordEntry> wordEntries = response.Data;
-                if (wordEntries.Count > 0)
+                Console.WriteLine($"Word: {root.Word}");
+
+                foreach (Meaning meaning in root.Meanings)
                 {
-                    WordEntry wordEntry = wordEntries[0];
-                    Console.WriteLine($"Definition of '{word}':");
-                    foreach (Meaning meaning in wordEntry.Meanings)
+                    Console.WriteLine($"Part of speech: {meaning.PartOfSpeech}");
+
+
+                    foreach (Definition definition in meaning.Definitions)
                     {
-                        Console.WriteLine($"- Part of Speech: {meaning.PartOfSpeech}");
-                        foreach (Definition definition in meaning.Definitions)
-                        {
-                            Console.WriteLine($"  - Definition: {definition.DefinitionText}");
-                            
-                            
-                            if (!string.IsNullOrEmpty(definition.Example))
-                            {
-                                Console.WriteLine($"    Example: {definition.Example}");
-                            }
-                        }
+                        
+                     Console.WriteLine($"definition: {definition.definition}");
+                     Console.WriteLine($"example: {definition.Example}");
                     }
-                }
-                else
-                {
-                    Console.WriteLine("No definitions found for the word.");
-                }
+
             }
-            else
-            {
-                Console.WriteLine($"Error: {response.ErrorMessage}");
             }
         }
     }
